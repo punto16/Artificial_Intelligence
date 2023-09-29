@@ -11,6 +11,6 @@ public class Logic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        agent.destination = target.position;
+        agent.destination = target.position;.
     }
 }
