@@ -52,10 +52,10 @@
         void Update () {
             // Choose the next destination point when the agent gets
             // close to the current one.
-            if (!target.pathPending && target.remainingDistance < 0.5f)
+            if (!target.pathPending && target.remainingDistance < 2f)
                 GotoNextPoint();
 
-            if (Vector3.Distance(targetTransform.position, agentTransform.position) >= 4)
+            if (Vector3.Distance(targetTransform.position, agentTransform.position) >= 18)
             {
                 target.isStopped = true;
             }
