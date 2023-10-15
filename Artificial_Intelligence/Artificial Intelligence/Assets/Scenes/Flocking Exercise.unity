@@ -328,15 +328,15 @@ MonoBehaviour:
   fishPrefab: {fileID: 366257161}
   numFish: 19
   allFish: []
-  swimLimits: {x: 4, y: 4, z: 4}
+  swimLimits: {x: 7, y: 7, z: 7}
   bounded: 0
   randomize: 0
   followLider: 0
   lider: {fileID: 835539995}
   minSpeed: 1.42
   maxSpeed: 3.89
-  distance: 0.8
-  rotationSpeed: 0.42
+  distance: 7.67
+  rotationSpeed: 0.31
 --- !u!1 &982484621
 GameObject:
   m_ObjectHideFlags: 0
@@ -611,7 +611,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 84.9
+  field of view: 48.1
   orthographic: 0
   orthographic size: 5
   m_Depth: -1

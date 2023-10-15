@@ -10,16 +10,16 @@ public class FlockManager: MonoBehaviour
     public GameObject fishPrefab;
     public int numFish;
     public GameObject[] allFish;
-    public Vector3 swimLimits = new Vector3(1, 1, 1);
+    public Vector3 swimLimits = new Vector3(5, 5, 5);
     public bool bounded;
     public bool randomize;
     public bool followLider;
     public GameObject lider;
     [Header("")]
-    [Range (0, 5)] public float minSpeed;
-    [Range (0,5)] public float maxSpeed;
-    [Range (0,10)] public float distance;
-    [Range (0,5)] public float rotationSpeed;
+    [Range (1.0f, 5.0f)] public float minSpeed;
+    [Range (1.0f, 5.0f)] public float maxSpeed;
+    [Range (1.0f,10.0f)] public float distance;
+    [Range (0.0f, 5.0f)] public float rotationSpeed;
 
 
     // Start is called before the first frame update

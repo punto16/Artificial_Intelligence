@@ -18,7 +18,7 @@ public class Flock : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        speed                                                                                              = UnityEngine.Random.Range(fManager.minSpeed, fManager.maxSpeed);
+        speed = UnityEngine.Random.Range(fManager.minSpeed, fManager.maxSpeed);
     }
 
     void Update()
@@ -36,7 +36,6 @@ public class Flock : MonoBehaviour
         transform.Translate(0.0f, 0.0f, Time.deltaTime * speed);
     }
 
-    // Update is called once per frame
     void Flocking()
     {
         Vector3 cohesion = Vector3.zero;
