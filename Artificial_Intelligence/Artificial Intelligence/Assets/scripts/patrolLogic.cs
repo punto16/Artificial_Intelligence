@@ -55,7 +55,7 @@
             if (!target.pathPending && target.remainingDistance < 2f)
                 GotoNextPoint();
 
-            if (Vector3.Distance(targetTransform.position, agentTransform.position) >= 18)
+            if (Vector3.Distance(targetTransform.position, agentTransform.position) >= 3)
             {
                 target.isStopped = true;
             }
