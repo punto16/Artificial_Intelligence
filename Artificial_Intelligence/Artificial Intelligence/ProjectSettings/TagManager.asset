@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Villager
+  - Robber
+  - policeman
+  - toSteal
+  - hideSpot
   layers:
   - Default
   - TransparentFX
