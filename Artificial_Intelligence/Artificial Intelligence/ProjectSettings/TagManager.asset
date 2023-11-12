@@ -9,6 +9,7 @@ TagManager:
   - policeman
   - toSteal
   - hideSpot
+  - hide3
   layers:
   - Default
   - TransparentFX
