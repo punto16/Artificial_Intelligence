@@ -1,23 +1,20 @@
 using UnityEngine;
 
-public class Slots : MonoBehaviour
+public class SlotsStatic : MonoBehaviour
 {
-    public int melee;
-    public GameObject meleePrefab;
-    public int missile;
-    public GameObject missilePrefab;
-    public int magic;
-    public GameObject magicPrefab;
+    public int gameObjectsAmount;
+    public GameObject prefab;
+    public int rows;
     public GameObject ghost;
 
     void Start()
     {
-        int front = 2 * melee / 3;
-        int rear = melee - front;
-        createRow(front, -2f, meleePrefab);
-        createRow(missile, -4f, missilePrefab);
-        createRow(magic, -6f, magicPrefab);
-        createRow(rear, -8f, meleePrefab);
+        float pos = -2f;
+        for (int i = 0; i < rows; i++) 
+        {
+            createRow((int)(gameObjectsAmount / rows), pos, prefab);
+            pos -= 2f;
+        }
     }
 
     void createRow(int num, float z, GameObject pf)

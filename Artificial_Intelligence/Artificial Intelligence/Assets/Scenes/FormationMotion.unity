@@ -944,7 +944,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1104619066}
-  - component: {fileID: 1104619065}
+  - component: {fileID: 1104619067}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -952,25 +952,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1104619065
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1104619064}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8dd4be497dbfca14ea21184db2a142ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  melee: 5
-  meleePrefab: {fileID: 4975976810483710590, guid: e6f91243a53d8cd4fab23ed891f0cc8a, type: 3}
-  missile: 3
-  missilePrefab: {fileID: 2744035215387846840, guid: d2a6cffd27c3e44449a585a61fc0359d, type: 3}
-  magic: 2
-  magicPrefab: {fileID: 2618188073631541129, guid: 51e437be22296b340954bf6591a60065, type: 3}
-  ghost: {fileID: 286665016}
 --- !u!4 &1104619066
 Transform:
   m_ObjectHideFlags: 0
@@ -986,6 +967,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1104619067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104619064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5381bb72701ef3146a1509adf89cc40c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObjectsAmount: 9
+  prefab: {fileID: 4975976810483710590, guid: e6f91243a53d8cd4fab23ed891f0cc8a, type: 3}
+  rows: 3
+  ghost: {fileID: 286665016}
 --- !u!1 &1330037289
 GameObject:
   m_ObjectHideFlags: 0
