@@ -5,8 +5,13 @@ using UnityEngine.AI;
 
 public class Logic : MonoBehaviour
 {
-    public NavMeshAgent agent;
+    NavMeshAgent agent;
     public Transform target;
+
+    void Start()
+    {
+        agent = gameObject.GetComponent<NavMeshAgent>();
+    }
 
     // Update is called once per frame
     void Update()
