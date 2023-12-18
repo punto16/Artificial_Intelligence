@@ -10,6 +10,8 @@ TagManager:
   - toSteal
   - hideSpot
   - hide3
+  - Cop
+  - Treasure
   layers:
   - Default
   - TransparentFX
